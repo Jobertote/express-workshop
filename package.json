@@ -4,7 +4,12 @@
   "description": "An API REST using express.js",
   "main": "index.js",
   "scripts": {
+    "start": "node index",
     "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Jobertote/express-workshop.git"
   },
   "keywords": [
     "api",
@@ -14,7 +19,12 @@
   ],
   "author": "Job Dorado",
   "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Jobertote/express-workshop/isues"
+  },
+  "homepage": "https://github.com/Jobertote/express-workshop#readme",
   "dependencies": {
-    "express": "^4.17.1"
+    "express": "^4.17.1",
+    "nodemon": "^2.0.12"
   }
 }
