@@ -35,11 +35,11 @@ user.post("/login", async (req, res, next) =>{
             return res.status(200).json({ code: 200, message: token});
         }
         else{
-            return res.status(200).json({ code: 200, message: "Usuario y/o contrasena incorrectos"});
+            return res.status(200).json({ code: 401, message: "Usuario y/o contrasena incorrectos"});
         }
         
     }
-    return res.status(401).json({ code: 401, message: "Canmpos incompletos"});
+    return res.status(500).json({ code: 500, message: "Canmpos incompletos"});
 
     
 });
